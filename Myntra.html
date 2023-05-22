@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Myntra</title>
+<script src="https://kit.fontawesome.com/a316a0613f.js" crossorigin="anonymous"></script>
+<style>
+    
+    *{
+        font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        margin:0px;
+        padding:0px;
+    }
+    #screen{
+        width: 100%;
+        height: 100%;
+        /* height: 150 px; */
+    }
+    #navigation
+    {
+        width: 100%;
+        height : 70px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    #icon
+    {
+        /* border:2px solid red; */
+        width: 10%;
+        height:100%;
+    }
+    #mynrtaicon {
+            margin-top: 10px;
+            margin-left: 25%;
+            width: 50%;
+            height: 60%;
+        }
+    #nav
+    {
+        /* border:2px solid red;  */
+        width :32%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    #search
+    {
+        
+        width: 32%;
+    }
+    #searchbox
+    {
+        border:2px solid grey;
+         margin-top:  10px;
+    }
+    #searchicon
+    {
+     margin-top: 15px;
+     margin-left: 15px;
+     margin-right: 10px;
+    }
+    #serchinput
+    {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border:none;
+      outline: none;
+      color:gray;
+    }
+    #profile
+    {
+        width:20%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .text-center
+    {
+        text-align: center;
+            padding: 10px;
+    }
+    .margin-top-zero
+    {
+        margin-top: 0;
+    }
+    #body
+    {
+        
+        height:70%;
+        width:100%;
+        display:flex;
+        justify-content: space-around;
+    }
+    #left{
+        border: 2px solid #f4f4f6;
+        width:15%;
+        height:auto;
+        margin-left:10px;
+       
+    }
+    #left>div{
+        border: 2px solid #f4f4f6;
+        
+    
+    }
+    #left>div>h4{
+        margin:0px;
+        padding:0px;
+        padding:10px;
+    }
+    #left>div>input,label{
+        margin-top:10px;
+    }
+   
+    #right{
+        width: 90%;
+            border: 2px solid #f4f4f6;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            /* margin-top:20px; */
+            height:950px;
+    }
+   #right>div{
+    border: 2px solid  #f4f4f6;
+    width:170px;
+    height:250px;
+    padding:0px;
+   }
+   #right>div>img{
+    width:100%;
+    height:85%;
+   }
+    /* #nav
+    {
+        display: flex;
+        justify-content: space-around;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 15px;
+    } */
+</style>
+    </head>
+    <body>
+<div id="screen">
+
+    <div id="navigation">
+        <div id ="icon">
+            <img id="mynrtaicon" src="./myntra (1).png">
+        </div>
+        <div id="nav">
+            <div class="nav">MEN</div>
+            <div class="nav">WOMEN</div>
+            <div class="nav">KIDS</div>
+            <div class="nav">HOME</div>
+            <div class="nav">BEAUTY</div>
+            <div class="nav">STUDIO</div>
+        </div>
+        <div id="search">
+            <div id="searchbox">
+            <i id="searchicon" class="fa-solid fa-magnifying-glass fa-lg"></i>
+            <input id="serchinput" placeholder="search product..."/>
+            </div>
+        </div>
+        <div id="profile">
+            <div class="text-center">
+            <i class="fa-regular fa-user fa-lg"></i>
+            <p class="margin-top-zero">PROFILE</p>
+            </div>
+            <div class="text-center">
+            <i class="fa-regular fa-heart fa-lg"></i>
+            <p class="margin-top-zero">WSIHLIST</p>
+            </div>
+            <div class="text-center">
+            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+            <p class="margin-top-zero">BAG</p>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <div id="left">
+            <div>
+                <h4>Filters</h4>
+                <input type="radio"/>
+                <label>Man</label><br>
+                <input type="radio"/>
+                <label>Women</label><br>
+                <input type="radio"/>
+                <label>Boys</label><br>
+                <input type="radio"/>
+                <label>Girls</label><br>
+            </div>
+            <div>
+                <h4>CATEGORIES</h4>
+                <input type="checkbox"/>
+                <label>Tshrits</label><br>
+                <input type="checkbox"/>
+                <label>Shirts</label><br>
+                <input type="checkbox"/>
+                <label>Jeans</label><br>
+                <input type="checkbox"/>
+                <label>Kurta Sets</label><br>
+                <input type="checkbox"/>
+                <label>Trousers</label><br>
+                <input type="checkbox"/>
+                <label>Sweatshirts</label><br>
+                <input type="checkbox"/>
+                <label>Kurtas</label><br>
+                <input type="checkbox"/>
+                <label>Jackets</label><br>
+                
+            </div>
+            <div>
+                <h4>BRAND</h4>
+                <input type="checkbox"/>
+                <label>Roadster</label><br>
+                <input type="checkbox"/>
+                <label>SOJANYA</label><br>
+                <input type="checkbox"/>
+                <label>Allen Solly</label><br>
+                <input type="checkbox"/>
+                <label>Flying Machine</label><br>
+                <input type="checkbox"/>
+                <label>U.S. Polo Assn.</label><br>
+                <input type="checkbox"/>
+                <label>Van Heusen</label><br>
+                <input type="checkbox"/>
+                <label>DEYANN</label><br>
+                <input type="checkbox"/>
+                <label>Jack & Jone</label><br>
+            </div>
+            <div>
+                <h4>PRICE</h4>
+                <input type="checkbox"/>
+                <label>Rs. 299 to Rs. 2349</label><br>
+                <input type="checkbox"/>
+                <label>Rs. 2349 to Rs. 4399</label><br>
+                <input type="checkbox"/>
+                <label>Rs. 4399 to Rs. 6449</label><br>
+                <input type="checkbox"/>
+                <label>Rs. 4399 to Rs. 6449</label><br>
+                
+            </div>
+            <div>
+                <h4>COLOR</h4>
+                    <input type="checkbox"/>
+                <label>Red</label><br>
+                <input type="checkbox"/>
+                <label>Yellow</label><br>
+                <input type="checkbox"/>
+                <label>Black</label><br>
+                <input type="checkbox"/>
+                <label>Green</label><br>
+                <input type="checkbox"/>
+                <label>whilte</label><br>
+                <input type="checkbox"/>
+                <label>grey</label><br>
+                
+            </div>
+            <div>
+                <h4>DISCOUNT RANGE</h4>
+                <input type="radio"/>
+                <label>10% and above</label><br>
+                <input type="radio"/>
+                <label>20% and above</label><br>
+                <input type="radio"/>
+                <label>30% and above</label><br>
+                <input type="radio"/>
+                <label>40% and above</label><br>
+                <input type="radio"/>
+                <label>50% and above</label><br>
+                <input type="radio"/>
+                <label>60% and above</label><br>
+            </div>
+        </div>
+        <div id="right">
+            <div>
+                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg"/>
+                <h4>Mongoman</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 87006</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12377258/2020/9/11/ce1b7bcb-a65a-4eb0-a317-42ac02718f1e1599798741705UrbanoFashionPrintedMenRoundNeckDarkGreenT-Shirt1.jpg" />
+                <h4>Mongoman</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 87006</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            <div>
+                <img
+                    src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2475811/2018/4/20/11524206887991-Roadster-Men-Tshirts-9291524206887825-1.jpg" />
+                <h4>Roadster</h4>
+                <p>Thsirt</p>
+                <h4>Rs. 876</h4>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+    </body>
+</html>

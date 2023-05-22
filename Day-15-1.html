@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://kit.fontawesome.com/a316a0613f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #screen {
+            /* border:5px solid black; */
+            width: 100%;
+        }
+
+        #navbar {
+            border: 2px solid whilte;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(22, 27, 34);
+            color: white;
+        }
+
+        #bar {
+            display: none;
+        }
+
+        #nav-left {
+            border: 2px solid rgb(28, 5, 54);
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #nav-left>div:nth-child(2) {
+            width: 40%;
+
+        }
+
+        #icon {
+            width: 10%;
+
+        }
+
+        #icon>img {
+            width: 60%;
+            height: 90%;
+            margin-left: 20px;
+        }
+
+        #inputbox {
+            border: 2px solid rgb(48, 54, 61);
+            height: 35px;
+            margin-top: 10px;
+            /* padding-top:10px; */
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #inputbox>div {
+            display: flex;
+        }
+
+        #inputbox>div>i {
+            margin-top: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+            color: rgb(72, 79, 86);
+        }
+
+        #inputbox>div>input {
+            background-color: rgb(22, 27, 34);
+            outline: none;
+            border: none;
+        }
+
+        #menu {
+            display: flex;
+            justify-content: space-between;
+            width: 45%;
+            margin-top: 20px;
+        }
+
+        #nav-right {
+            width: 8%;
+            padding-top: 20px;
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #body {
+            border: 2px solid rgb(223, 60, 60);
+            width: 100%;
+            height: 670px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #part3 {
+            /* border:2px solid purple; */
+            width: 22%;
+            margin-top: 40px;
+        }
+
+        #part3>span {
+
+            border: 2px solid purple;
+        }
+
+        #part4 {
+            border: 2px solid purple;
+            width: 47%;
+        }
+
+        #part5 {
+            border: 2px solid purple;
+            width: 27%;
+        }
+
+        #re {
+            display: block;
+            border: 5px solid blue;
+            height: 70px;
+        }
+
+        @media screen and (max-width:700px) {
+            #bar {
+                display: block;
+                padding: 17px;
+            }
+
+            #nav-left>div:nth-child(1)>img {
+
+                height: 88%;
+                width: 99%;
+            }
+
+            #nav-left>div:nth-child(2) {
+                display: none;
+            }
+
+            #nav-left>div:nth-child(3) {
+                display: none;
+            }
+
+            #nav-right>div:nth-child(2) {
+                display: none;
+            }
+
+            #nav-right>div:nth-child(3) {
+                display: none;
+            }
+
+            #body {
+                flex-direction: column;
+                border-color: black;
+            }
+
+            #part3 {
+                border-color: blue;
+                width: 100%;
+                height: 300px;
+                display: flex;
+            }
+
+            #part4 {
+                width: 100%;
+                height: 200px;
+            }
+
+            #part5 {
+                display: none;
+            }
+
+            #re {
+                display: block;
+                border: 5px solid blue;
+                height: 70px;
+            }
+
+            #rep {
+                border: 2px solid black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="bar"><i class="fa-solid fa-bars fa-xl"></i></div>
+            <div id="nav-left">
+                <div id="icon">
+                    <img src="./github-6980894_960_720.png" alt="github" />
+                </div>
+                <div>
+                    <div id="inputbox">
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input placeholder="search or jump to.." />
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-square-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu">
+                    <div>Pull request</div>
+                    <div>Issue</div>
+                    <div>codespace</div>
+                    <div>Marketplace</div>
+                    <div>Explore</div>
+                </div>
+            </div>
+            <div id="nav-right">
+                <div><i class="fa-regular fa-bell fa-lg"></i></div>
+                <div> <i class="fa-solid fa-plus"></i></div>
+                <div> <i class="fa-regular fa-user"></i></div>
+            </div>
+        </div>
+        <div id="body">
+            <div id="part3">
+                <span>Top Repositories</span>
+                <button style="margin-left:85px;margin-bottom:10px;font-size:larger;padding-top:5px;padding-left:20px
+            ;padding-right:25px ;padding-bottom:10px;border:2px solid black;border-radius:10px
+            ;"><i Style="padding-right:10px" class="fa-regular fa-note-sticky fa-lg"></i>New</button>
+                <div id="rep"><input type="search"placeholder="Find a Repository.." /></div>
+                <div id="re">recant activaty</div>
+            </div>
+            <div id="part4">part2</div>
+            <div id="part5">part3</div>
+        </div>
+    </div>
+</body>
+
+</html>
